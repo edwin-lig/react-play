@@ -24,7 +24,8 @@ import {
   DynamicRoutes,
   SimpleLiveChat,
   FlipCardEffect,
-  //import play here
+  Todo,
+//import play here
 } from "plays";
 
 export const plays = [
@@ -426,5 +427,18 @@ export const plays = [
     blog: "",
     video: "",
     language: "js",
+  }, {
+    id: 'pl-todo', 
+    name: 'Todo', 
+    description: 'Todo list',
+    component: () => {return <Todo />},
+    path: '/plays/todo',
+    level: 'Beginner',
+    tags: 'JSX',
+    github: 'edwin-lig',
+    cover: 'https://cdn.jsdelivr.net/gh/zshipu/images/202206191704752.jpeg',
+    blog: '',
+    video: '',
+    language: 'js'
   }, //replace new play item here
 ];
